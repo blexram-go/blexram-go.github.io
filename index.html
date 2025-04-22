@@ -1,1 +1,114 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian Ramos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content-container">
+            <h1>brianramos %</h1>
+            <div class="typing">
+                <span class="line" data-text="> Hi there! 👋🏽 My name is Brian Ramos"></span>
+                <br>
+                <span class="line"
+                    data-text="> I am a Backend Engineer who isn't afraid to get dirty in the Frontend"></span>
+                <br>
+                <span class="line"
+                    data-text="> I want to help build reliable and secure server-side solutions, infrastructure and databases"></span>
+            </div>
+        </div>
+        <div class="about-container">
+            <h1>brianramos % cd About</h1>
+            <div class="typing">
+                <span class="line" data-text="> I'm Brian Ramos. I love programming and coding."></span>
+                <br>
+                <span class="line"
+                    data-text="> Especially backend development - the joy of setting up a server hooked up to a database with authentication and a simple API is unmatched."></span>
+                <br>
+                <span class="line"
+                    data-text="> I have over 9 years of experience in technical support and customer technology. "></span>
+                <br>
+                <span class="line"
+                    data-text="> But after years of helping customers understand how to use tech, I wanted to created it for them."></span>
+                <br>
+                <span class="line"
+                    data-text="> I picked up programming about 3 years ago and I never looked back. Now, I want to help build these backend solutions for customers and stakeholders."></span>
+            </div>
+        </div>
+        <div class="projects-container">
+            <h1>brianramos % cd Projects</h1>
+            <div class="terminal-window">
+                <div class="prompt">Projects % ls</div>
+                <ul class="file-list">
+                    <li><a href="https://github.com/blexram-go/quickthoughts" target="_blank">Quickthoughts</a></li>
+                    <li><a href="https://github.com/blexram-go/pokedexcli" target="_blank">Pokedexcli</a></li>
+                    <li><a href="https://github.com/blexram-go/mychatapp" target="_blank">Chat App</a></li>
+                    <li><a href="https://github.com/blexram-go/gator-go" target="_blank">Gator</a></li>
+                </ul>
+            </div>
+            <div class="typing">
+                <br>
+                <span class="line" m
+                    data-text="> Quickthoughts: A journal app with a React frontend and Go backend"></span>
+                <br>
+                <span class="line" m data-text="> Pokedexcli: A pokedex written in Go for the command line"></span>
+                <br>
+                <span class="line" m data-text="> Chat App: A simple chat app using Go to understand websockets"></span>
+                <br>
+                <span class="line" m
+                    data-text="> Gator: An RSS feed aggregator written in Go for the command line"></span>
+            </div>
+        </div>
+        <div class="contact-container">
+            <h1>brianramos % cd Contact</h1>
+            <div class="terminal-window">
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="78f7de73-a0e5-4eff-9cf1-eb16840c1063">
+
+                    <div class="prompt">Contact % Name</div>
+                    <input type="text" name="name" required>
+
+                    <div class="prompt">Contact % Email</div>
+                    <input type="email" name="email" required>
+
+                    <div class="prompt">Contact % Message</div>
+                    <textarea name="message" rows="5" required></textarea>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <button type="submit">Send</button>
+                </form>
+                <div class="prompt" id="responseMsg"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
